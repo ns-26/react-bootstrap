@@ -13,13 +13,16 @@ import { configureStore } from "./redux/store";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
-  <Provider store={configureStore({})}>
-    <I18nextProvider i18n={i18n}>
-      <App />
-      <ToastContainer pauseOnFocusLoss={false} />
-    </I18nextProvider>
-  </Provider>
+  <React.StrictMode>
+    <Provider store={configureStore({})}>
+      <I18nextProvider i18n={i18n}>
+        <App />
+        <ToastContainer pauseOnFocusLoss={false} />
+      </I18nextProvider>
+    </Provider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
