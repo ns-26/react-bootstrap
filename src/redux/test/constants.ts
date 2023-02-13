@@ -1,0 +1,5 @@
+export enum ActionTypes {
+  TEST = "TEST",
+  FETCH_ALL_TRIGGER = "FETCH_ALL_TRIGGER",
+  SET_TRIGGER_ERROR = "SET_TRIGGER_ERROR",
+}
